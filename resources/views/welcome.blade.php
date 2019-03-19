@@ -8,10 +8,10 @@
             {{ csrf_field() }}
             <div class="border-teal p-8 border-t-12 bg-white mb-6 rounded-lg shadow-lg">
                 <div class="mb-4">
-                    <label class="block text-grey-darker text-sm font-bold mb-2" for="username">
-                        Username
+                    <label class="block text-grey-darker text-sm font-bold mb-2" for="email">
+                        Email
                     </label>
-                    <input class="shadow appearance-none border rounded w-full h-12 py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username">
+                    <input class="shadow appearance-none border rounded w-full h-12 py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" id="username" type="email" placeholder="Email">
                 </div>
 
                 <div class="mb-4">
@@ -23,7 +23,7 @@
 
                 <div class="flex items-center justify-between">
                     <button class="bg-green hover:bg-green-dark text-white font-bold w-full h-12 py-2 px-4  rounded focus:outline-none focus:shadow-outline" type="button">
-                        Log In
+                        Sign In
                     </button>
                 </div>
         </form>
