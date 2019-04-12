@@ -11,20 +11,23 @@
                     <label class="block text-grey-darker text-sm font-bold mb-2" for="email">
                         Email
                     </label>
-                    <input class="shadow appearance-none border rounded w-full h-12 py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" id="username" type="email" placeholder="Email">
+                    <input class="shadow appearance-none border rounded w-full h-12 py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" id="username" name="email" type="email" placeholder="Email">
                 </div>
 
                 <div class="mb-4">
                     <label class="block text-grey-darker text-sm font-bold mb-2" for="password">
                         Password
                     </label>
-                    <input class="shadow appearance-none border rounded w-full h-12 py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="************">
+                    <input class="shadow appearance-none border rounded w-full h-12 py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" id="password" name="password" type="password" placeholder="************">
                 </div>
 
                 <div class="flex items-center justify-between">
-                    <button class="bg-green hover:bg-green-dark text-white font-bold w-full h-12 py-2 px-4  rounded focus:outline-none focus:shadow-outline" type="button">
+                    <button class="bg-green hover:bg-green-dark text-white font-bold w-full h-12 py-2 px-4  rounded focus:outline-none focus:shadow-outline" type="submit">
                         Sign In
                     </button>
+                </div>
+                <div class="flex items-center pt-2">
+                    {!! $errors->first($key = null, '<span class="text-red">:message</span>')!!}
                 </div>
         </form>
     </div>
