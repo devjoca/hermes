@@ -3,7 +3,7 @@
 @section('body')
 <div class="container mx-auto h-full flex justify-center items-center">
     <div class="w-1/3">
-        <h1 class="font-hairline mb-6 text-center">Hermes ⚡️</h1>
+        <h1 class="mb-6 text-center"><span class="font-mono">Hermes</span> ⚡️</h1>
         <form action="/login" method="POST">
             {{ csrf_field() }}
             <div class="border-teal p-8 border-t-12 bg-white mb-6 rounded-lg shadow-lg">
@@ -22,7 +22,7 @@
                 </div>
 
                 <div class="flex items-center justify-between">
-                    <button class="bg-green hover:bg-green-dark text-white font-bold w-full h-12 py-2 px-4  rounded focus:outline-none focus:shadow-outline" type="submit">
+                    <button class="bg-teal-dark hover:bg-teal-darker text-white font-bold w-full h-12 py-2 px-4  rounded focus:outline-none focus:shadow-outline" type="submit">
                         Sign In
                     </button>
                 </div>
