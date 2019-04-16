@@ -16,5 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', 'DashboardController');
+Route::delete('/monitor/{id}', 'MonitorsController@delete');
 
 Auth::routes();

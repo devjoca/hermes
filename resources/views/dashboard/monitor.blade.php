@@ -20,10 +20,15 @@
             <td>{{ $monitor['status'] }}</td>
             <td>{{ $monitor['certificate_check_enabled'] ? $monitor['certificate_status'] : 'not enabled' }}</td>
             <td>
-                Editar | Eliminar
+                <delete-button url="{{ url('monitor/'. $monitor['id']) }}"></delete-button>
             </td>
         </tr>
         @endforeach
+        @if($monitors->isEmpty())
+            <tr class="border-b">
+                <td colspan="5">There are no rows to show 👀</td>
+            </tr>
+        @endif
     </table>
 </div>
 @endsection

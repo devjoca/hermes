@@ -11,6 +11,7 @@ class DashboardController extends Controller
     {
         $monitors = Monitor::all()->map(function($m) {
             return [
+                'id' => $m->id,
                 'url' => "{$m->url}",
                 'status' => $m->uptime_status,
                 'certificate_check_enabled' => $m->certificate_check_enabled,

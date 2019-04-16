@@ -25,10 +25,10 @@
                 <span>Monitor</span>
             </div>
         </div>
-        <div class="flex-1 bg-grey-lightest text-grey-darkest pl-10">
+        <div id="app" class="flex-1 bg-grey-lightest text-grey-darkest pl-10">
             @yield('body')
         </div>
     </div>
 </body>
-
+<script src="{{ mix('js/app.js') }}"></script>
 </html>
