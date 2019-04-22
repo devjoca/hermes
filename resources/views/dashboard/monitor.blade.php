@@ -2,7 +2,14 @@
 
 @section('body')
 <div class="py-6 border-grey-light">
-    <h1>Apps</h1>
+    <div class="flex mb-4">
+        <div class="w-3/4 h-12">
+            <h1>Apps</h1>
+        </div>
+        <div class="w-1/4 h-12">
+            <a class="py-4 px-6 mt-4 bg-teal-dark rounded font-bold text-white cursor-pointer align-middle no-underline" href="/monitors/create">Create</a>
+        </div>
+    </div>
 </div>
 <div>
     <table class="text-left w-full border-collapse bg-white text-center">
@@ -25,9 +32,9 @@
         </tr>
         @endforeach
         @if($monitors->isEmpty())
-            <tr class="border-b">
-                <td colspan="5">There are no rows to show 👀</td>
-            </tr>
+        <tr class="border-b">
+            <td colspan="5">There are no rows to show 👀</td>
+        </tr>
         @endif
     </table>
 </div>
