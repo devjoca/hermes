@@ -11,10 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'HomeController');
+
+Route:: middleware('auth')->group(function() {
+    Route::get('/dashboard', 'DashboardController');
+    Route::delete('/monitor/{id}', 'MonitorsController@delete');
 });
 
-Route::get('/dashboard', 'DashboardController');
-
 Auth::routes();
+Route::delete('/logout', 'LoginController@logout');
