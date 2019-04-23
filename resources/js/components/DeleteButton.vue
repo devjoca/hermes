@@ -12,7 +12,7 @@ import axios from 'axios';
                 if(confirm("You want to delete this monitor?")) {
                     axios.delete(this.url)
 
-                    window.location.reload()
+                    history.go(0)
                 }
             }
         }

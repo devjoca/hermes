@@ -15,7 +15,9 @@
     <div class="min-h-screen md:flex">
         <div class="flex-none w-full md:max-w-xs bg-black text-white">
             <div class="px-10 py-6 bg-teal-dark">
-                <h2><span class="font-mono">Hermes</span>⚡</h2>
+                <a href="/apps" class="text-white no-underline">
+                    <h2><span class="font-mono">Hermes</span>⚡</h2>
+                </a>
             </div>
             <div class="mt-10 px-6 py-5 text-lg font-semibold border-indigo-light border-l-8 bg-grey-darkest cursor-pointer">
                 <svg class="align-middle w-5 h-5 mr-2 fill-current text-white inline-block" enable-background="new 0 0 372 372" version="1.1" viewBox="0 0 372 372" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
