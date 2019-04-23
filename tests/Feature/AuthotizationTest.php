@@ -10,7 +10,7 @@ class AuthotizationTest extends TestCase
 {
     public function test_dashboard_need_authorization()
     {
-        $response = $this->get('/dashboard');
+        $response = $this->get('/apps');
 
         $response-> assertRedirect('/');
     }

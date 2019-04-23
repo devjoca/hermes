@@ -11,11 +11,13 @@
 |
 */
 
-Route::get('/', 'HomeController');
+Route::get('/', 'HomeController')->middleware('guest');
 
 Route:: middleware('auth')->group(function() {
-    Route::get('/dashboard', 'DashboardController');
-    Route::delete('/monitor/{id}', 'MonitorsController@delete');
+    Route::get('/apps', 'AppsController@index');
+    Route::get('/apps/create', 'AppsController@create');
+    Route::post('/apps', 'AppsController@store');
+    Route::delete('/apps/{id}', 'AppsController@delete');
 });
 
 Auth::routes();
