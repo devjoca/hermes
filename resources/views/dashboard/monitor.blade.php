@@ -7,7 +7,7 @@
             <h1>Apps</h1>
         </div>
         <div class="w-1/4 h-12">
-            <a class="py-4 px-6 mt-4 bg-teal-dark rounded font-bold text-white cursor-pointer align-middle no-underline" href="/monitors/create">Create</a>
+            <a class="py-4 px-6 mt-4 bg-teal-dark rounded font-bold text-white cursor-pointer align-middle no-underline" href="/apps/create">Create</a>
         </div>
     </div>
 </div>

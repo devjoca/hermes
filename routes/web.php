@@ -15,7 +15,8 @@ Route::get('/', 'HomeController');
 
 Route:: middleware('auth')->group(function() {
     Route::get('/dashboard', 'DashboardController');
-    Route::delete('/monitor/{id}', 'MonitorsController@delete');
+    Route::delete('/apps/{id}', 'AppsController@delete');
+    Route::get('/apps/create', 'AppsController@create');
 });
 
 Auth::routes();

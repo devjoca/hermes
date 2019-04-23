@@ -13,13 +13,14 @@ class SignInTest extends TestCase
 
     public function test_user_can_sign_in()
     {
+        $this->withoutExceptionHandling();
+
         $user = factory(User::class)->create();
         $response = $this->post('/login', [
             'email' => $user->email,
             'password' => 'password',
         ]);
 
-        $response->assertStatus(302)
-            ->assertRedirect('/dashboard');
+        $response->assertRedirect('/dashboard');
     }
 }
