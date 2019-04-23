@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'HomeController');
+Route::get('/', 'HomeController')->middleware('guest');
 
 Route:: middleware('auth')->group(function() {
     Route::get('/apps', 'AppsController@index');
