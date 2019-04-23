@@ -21,6 +21,6 @@ class SignInTest extends TestCase
             'password' => 'password',
         ]);
 
-        $response->assertRedirect('/dashboard');
+        $response->assertRedirect('/apps');
     }
 }

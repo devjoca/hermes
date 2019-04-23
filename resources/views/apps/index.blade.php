@@ -27,7 +27,7 @@
             <td>{{ $monitor['status'] }}</td>
             <td>{{ $monitor['certificate_check_enabled'] ? $monitor['certificate_status'] : 'not enabled' }}</td>
             <td>
-                <delete-button url="{{ url('monitor/'. $monitor['id']) }}"></delete-button>
+                <delete-button url="{{ url('apps/'. $monitor['id']) }}"></delete-button>
             </td>
         </tr>
         @endforeach

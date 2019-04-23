@@ -10,9 +10,9 @@ import axios from 'axios';
         methods: {
             confirm() {
                 if(confirm("You want to delete this monitor?")) {
-                    axios.delete(this.url);
+                    axios.delete(this.url)
 
-                    window.location.href = '/dashboard';
+                    window.location.reload()
                 }
             }
         }

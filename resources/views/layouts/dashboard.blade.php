@@ -38,7 +38,7 @@
                 </form>
             </div>
         </div>
-        <div id="app" class="flex-1 bg-grey-lightest text-grey-darkest pl-10">
+        <div id="app" class="flex-1 bg-grey-lightest text-grey-darkest px-10">
             @yield('body')
         </div>
     </div>
