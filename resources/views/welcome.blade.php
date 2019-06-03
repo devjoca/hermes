@@ -16,32 +16,11 @@
                 <path d="m303.84 358.76c-3.535-0.185-7.031-1.533-9.872-4.08-6.593-5.91-7.159-16.039-1.271-22.645 0.617-0.704 36.33-42.075 36.367-105.46 0.015-25.608 9.608-43.073 28.513-51.91 14.998-7.011 33.906-7.548 53.924-8.117 24.615-0.698 52.515-1.491 76.977-14.31 7.858-4.116 17.565-1.086 21.681 6.771 4.118 7.857 1.086 17.565-6.771 21.681-31.039 16.264-64.273 17.208-90.976 17.966-42.819 1.217-51.212 3.576-51.227 27.935-0.046 76.333-42.722 124.82-44.539 126.85-3.372 3.768-8.122 5.568-12.806 5.323z" fill="#ECEFF1" />
             </svg>
         </h1>
-        <form action="/login" method="POST">
-            {{ csrf_field() }}
-            <div class="border-teal p-8 border-t-12 bg-white mb-6 rounded-lg shadow-lg">
-                <div class="mb-4">
-                    <label class="block text-grey-darker text-sm font-bold mb-2" for="email">
-                        Email
-                    </label>
-                    <input class="shadow appearance-none border rounded w-full h-12 py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" id="username" name="email" type="email" placeholder="Email">
-                </div>
-
-                <div class="mb-4">
-                    <label class="block text-grey-darker text-sm font-bold mb-2" for="password">
-                        Password
-                    </label>
-                    <input class="shadow appearance-none border rounded w-full h-12 py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" id="password" name="password" type="password" placeholder="************">
-                </div>
-
-                <div class="flex items-center justify-between">
-                    <button class="bg-teal-dark hover:bg-teal-darker text-white font-bold w-full h-12 py-2 px-4  rounded focus:outline-none focus:shadow-outline" type="submit">
-                        Sign In
-                    </button>
-                </div>
-                <div class="flex items-center pt-2">
-                    {!! $errors->first($key = null, '<span class="text-red">:message</span>')!!}
-                </div>
-        </form>
+        <div class="border-teal p-8 border-t-12 bg-white mb-6 rounded-lg shadow-lg text-center">
+            <a href="/login/slack">
+                <img alt="Sign in with Slack" height="40" width="172" src="https://platform.slack-edge.com/img/sign_in_with_slack.png" srcset="https://platform.slack-edge.com/img/sign_in_with_slack.png 1x, https://platform.slack-edge.com/img/sign_in_with_slack@2x.png 2x" />
+            </a>
+        </div>
     </div>
 </div>
 @endsection
