@@ -12,7 +12,9 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.8.*",
         "laravel/slack-notification-channel": "^2.0",
+        "laravel/socialite": "^4.1",
         "laravel/tinker": "^1.0",
+        "socialiteproviders/slack": "^3.0",
         "spatie/laravel-uptime-monitor": "^3.4"
     },
     "require-dev": {
@@ -37,7 +39,10 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": []
+            "dont-discover": [
+                "laravel/socialite",
+                "socialiteproviders/manager"
+            ]
         }
     },
     "autoload": {

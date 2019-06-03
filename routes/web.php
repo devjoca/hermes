@@ -13,6 +13,9 @@
 
 Route::get('/', 'HomeController')->middleware('guest');
 
+Route::get('login/slack', 'SlackLoginController@index');
+Route::get('/login/slack/callback', 'SlackLoginController@handle');
+
 Route:: middleware('auth')->group(function() {
     Route::get('/apps', 'AppsController@index');
     Route::get('/apps/create', 'AppsController@create');
