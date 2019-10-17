@@ -7,7 +7,8 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
+const Vue = require('vue');
+window.Vue = Vue;
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
