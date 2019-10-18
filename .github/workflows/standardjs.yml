@@ -12,7 +12,7 @@ jobs:
         fetch-depth: 1
 
     - name: StandardJs
-      uses: jopereyral/standardjs-action@0.2.1
+      uses: jopereyral/standardjs-action@master
       with:
         args: --fix
 
