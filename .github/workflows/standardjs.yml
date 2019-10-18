@@ -12,7 +12,7 @@ jobs:
         fetch-depth: 1
 
     - name: StandardJs
-      uses: docker://jopereyral/standardjs-action
+      uses: jopereyral/standardjs-action
       with:
         args: --fix
 
