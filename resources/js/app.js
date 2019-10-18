@@ -5,10 +5,10 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+require('./bootstrap')
 
-const Vue = require('vue');
-window.Vue = Vue;
+const Vue = require('vue')
+window.Vue = Vue
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -16,10 +16,10 @@ window.Vue = Vue;
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('delete-button', require('./components/DeleteButton.vue').default);
+Vue.component('delete-button', require('./components/DeleteButton.vue').default)
 
-export const createVue = options => new Vue(options);
+export const createVue = options => new Vue(options)
 
 createVue({
-    el: '#app'
-});
+  el: '#app'
+})
